@@ -1,0 +1,61 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: Setup, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\RSP000002.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FD /EHsc /RTC1 /MTd /Yu"stdafx.h" /Fp".\Debug/Setup.pch" /Fo".\Debug/" /Fd".\Debug/" /W3 /c /ZI /TP
+".\SetupPages.cpp"
+]
+Creating command line "cl.exe @"e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\RSP000002.rsp" /nologo"
+Creating temporary file "e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\RSP000003.rsp" with contents
+[
+/OUT:"Debug/Stub.exe" /INCREMENTAL:NO /NOLOGO /DELAYLOAD:"OleAcc.dll" /DEBUG /PDB:".\Debug/stub.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86  DelayImp.lib DelayImp.lib
+".\Debug\ChildView.obj"
+".\Debug\FileOperations.obj"
+".\Debug\MainFrm.obj"
+".\Debug\RegKey.obj"
+".\Debug\Setup.obj"
+".\Debug\Setup.res"
+".\Debug\SetupPages.obj"
+".\Debug\SetupSheet.obj"
+".\Debug\Shortcut.obj"
+".\Debug\StdAfx.obj"
+]
+Creating command line "link.exe @"e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\RSP000003.rsp""
+Creating temporary file "e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\BAT000004.bat" with contents
+[
+@echo off
+copy /b debug\stub.exe+data.dat debug\stub.exe
+if errorlevel 1 goto VCReportError
+goto VCEnd
+:VCReportError
+echo Project : error PRJ0019: A tool returned an error code from "add data"
+exit 1
+:VCEnd
+]
+Creating command line ""e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\BAT000004.bat""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+SetupPages.cpp
+Linking...
+LINK : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+add data
+debug\Stub.exe
+        1 file(s) copied.
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://e:\current project\MultiClickProject_1_9_2005\InstallBuilder\Setup\Debug\BuildLog.htm"
+Setup - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

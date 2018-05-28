@@ -1,0 +1,584 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MultiClick.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 235, 174
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "InfoDict 2.0",IDC_STATIC1,89,54,55,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC2,73,77,119,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,63,50,21,20
+END
+
+IDD_MULTICLICK_DIALOG DIALOGEX 0, 0, 287, 147
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "Arial", 700, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,0,21,285,125
+    PUSHBUTTON      "",IDC_SOUND,4,1,18,18
+    CONTROL         "",IDC_KEEPIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,5,
+                    12,12
+    PUSHBUTTON      "",IDC_CURRENTDICT,69,4,161,14
+END
+
+IDD_CONFIGDLG DIALOGEX 0, 0, 259, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Options",IDC_STATIC2,16,85,224,53
+    CONTROL         "",IDC_AUTOSTART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    33,115,8,8
+    COMBOBOX        IDC_GUILANGUAGE,50,169,159,16,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_CLOSEMODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    33,97,8,8
+    GROUPBOX        "AutoLook",IDC_STATIC1,15,17,224,58
+    GROUPBOX        "",IDC_STATIC,29,28,47,41
+    CONTROL         "",IDC_CTRL,"Button",BS_AUTORADIOBUTTON,33,37,8,8
+    CONTROL         "",IDC_SHIFT,"Button",BS_AUTORADIOBUTTON,33,47,8,8
+    CONTROL         "",IDC_IDC_NO_KEYBOARD,"Button",BS_AUTORADIOBUTTON,33,57,
+                    8,8
+    LTEXT           "+",IDC_STATIC14,83,48,9,8
+    LTEXT           "Ctrl",IDC_STATIC11,45,36,23,8
+    LTEXT           "Shift",IDC_STATIC12,46,47,25,8
+    LTEXT           "No",IDC_STATIC13,47,58,27,8
+    LTEXT           "Right Click",IDC_STATIC15,102,47,55,9
+    LTEXT           "Close window when mouse out",IDC_STATIC21,45,97,113,12
+    LTEXT           "Run at boot time",IDC_STATIC22,45,114,111,14
+    GROUPBOX        "Language gui",IDC_STATIC3,16,151,221,52
+END
+
+IDD_KEY_DIALOG DIALOGEX 0, 0, 319, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Setting",IDC_STATIC,14,15,282,68
+    GROUPBOX        "Option",IDC_STATIC,17,87,281,66
+    COMBOBOX        IDC_CHARSET,77,26,196,46,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_INPUT_METHOD,78,47,164,47,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Alt+Z",IDC_SWKEY1,"Button",BS_AUTORADIOBUTTON,80,66,36,
+                    9
+    CONTROL         "Ctrl+Shift",IDC_SWKEY2,"Button",BS_AUTORADIOBUTTON,151,
+                    65,58,11
+    CONTROL         "Tone Mark after vowel",IDC_FREE_MARKING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,39,101,133,16
+    CONTROL         "Use Clipboard for Unicode",IDC_U_CLIPBOARD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,38,126,139,12
+    PUSHBUTTON      "TaskBar",IDC_KEY_TASKBAR,129,164,49,13
+END
+
+IDD_SETTING DIALOGEX 0, 0, 352, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LISTPAGE,"SysListView32",WS_BORDER | WS_TABSTOP,7,
+                    7,62,203
+    LTEXT           "",IDC_PANEL,71,7,274,180,WS_BORDER
+    PUSHBUTTON      "Taskbar",IDC_BUTTON1,248,193,97,17
+END
+
+IDD_AUTHOR DIALOGEX 0, 0, 255, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Author"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    LTEXT           "Name: Tran The vu",IDC_STATIC1,51,34,134,11
+    LTEXT           "Info was Written by two author:",IDC_STATICM,25,16,156,
+                    12
+    LTEXT           "Email : anhvaut@yahoo.co.uk",IDC_STATIC2,51,46,140,14
+    LTEXT           "Name: Huynh Thi Le Thanh",IDC_STATIC3,51,62,146,10
+    LTEXT           "Email : foreverbluerain@yahoo.com",IDC_STATIC4,51,79,
+                    149,10
+    LTEXT           "person support:",IDC_STATIC5,25,98,185,12
+    LTEXT           "Truong Ngoc Chau",IDC_STATIC6,51,110,103,14
+    LTEXT           "Khoa Cong Nghe Thong Tin ",IDC_STATIC7,51,125,131,12
+    LTEXT           "Dai Hoc Back Khoa Da Nang",IDC_STATIC8,51,138,129,17
+    LTEXT           "Software uses Vnspeech lib of softech for Vietnamese speech",
+                    IDC_STATIC9,17,182,231,21
+END
+
+IDD_READ DIALOGEX 0, 0, 258, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Read"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Shotcut Keys",IDC_STATIC1,21,31,211,54
+    LTEXT           "Right Ctrl + Right Click",IDC_STATIC11,46,51,106,17
+    GROUPBOX        "Options",IDC_STATIC2,21,105,211,56
+    CONTROL         "Not Show dialog read options",IDC_READ_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,46,137,159,15
+    CONTROL         "turn off read",IDC_READ_TURN_OFF,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,46,124,117,8
+END
+
+IDD_SERVER DIALOGEX 0, 0, 262, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Server"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Connection",IDC_STATIC1,23,62,214,55
+    CONTROL         "Always AutoUpdate",IDC_AUTOUPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,41,140,122,14
+    GROUPBOX        "Update Option",IDC_STATIC2,23,127,214,38
+    GROUPBOX        "",IDC_STATIC,23,176,214,39
+    PUSHBUTTON      "Check for New Version",IDC_CHECK_NEW_VERSION,85,188,98,
+                    19
+    PUSHBUTTON      "",IDC_CONNECT,106,73,40,31
+    GROUPBOX        "URL",IDC_STATIC,23,16,214,35
+    EDITTEXT        IDC_URL,56,30,158,13,ES_AUTOHSCROLL
+END
+
+IDD_AUTOUPDATE_VERSION DIALOGEX 0, 0, 258, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "AutoUpdate"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Information",IDC_STATIC1,25,18,211,44
+    LTEXT           "Current version :",IDC_STATIC11,35,33,57,16
+    LTEXT           "",IDC_STATIC12,97,33,76,15
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,25,84,211,
+                    23
+    PUSHBUTTON      "Update",IDC_AUTOUPDATE_BTN,89,119,70,22
+END
+
+IDD_READTEXT DIALOGEX 0, 0, 289, 172
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+    LTEXT           "Van ban",IDC_STATIC1,10,7,57,11
+    COMBOBOX        IDC_COMBO1,49,121,153,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Voice",IDC_STATIC2,8,123,31,16
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_NOTICKS | 
+                    WS_TABSTOP,42,139,168,13,WS_EX_TRANSPARENT
+    LTEXT           "Toc do",IDC_STATIC3,6,141,31,14
+    LTEXT           "Am luong",IDC_STATIC4,7,157,37,14
+    GROUPBOX        "Tuy chon",IDC_STATIC,203,16,78,91,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_TEXTBOX,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,7,
+                    18,187,88
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_NOTICKS | 
+                    WS_TABSTOP,42,155,168,13,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Mo File",IDC_MOFILE,210,27,63,17
+    PUSHBUTTON      "Doc",IDC_DOCVB,210,47,63,17
+    PUSHBUTTON      "Tam Ngung",IDC_NGUNG,210,68,63,16
+    PUSHBUTTON      "Ngung",IDC_DUNG,210,87,63,16
+END
+
+IDD_DICTIONARYDLG DIALOGEX 0, 0, 252, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dictionary"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Opacity when lost focus",IDC_STATIC1,14,16,221,51
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,29,39,188,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Khoa CNTT - DHDN"
+            VALUE "FileDescription", "Author :The Vu & Le Thanh"
+            VALUE "FileVersion", "2, 0, 0, 0"
+            VALUE "InternalName", "MultiClick"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "MultiClick.EXE"
+            VALUE "ProductName", "MultiClick Application"
+            VALUE "ProductVersion", "2, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_MULTICLICK_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 286
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_CONFIGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        VERTGUIDE, 33
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_KEY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_AUTHOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        VERTGUIDE, 25
+        VERTGUIDE, 36
+        VERTGUIDE, 51
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_READ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        VERTGUIDE, 46
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_SERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        VERTGUIDE, 23
+        VERTGUIDE, 41
+        VERTGUIDE, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_AUTOUPDATE_VERSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        VERTGUIDE, 25
+        VERTGUIDE, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+        HORZGUIDE, 33
+    END
+
+    IDD_READTEXT, DIALOG
+    BEGIN
+        VERTGUIDE, 42
+        VERTGUIDE, 210
+        VERTGUIDE, 273
+    END
+
+    IDD_DICTIONARYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MULTICLICK_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x3393, 0x0000, 0x16a2, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SYSMENU MENU 
+BEGIN
+    POPUP "SysMenu"
+    BEGIN
+        POPUP "Online Features"
+        BEGIN
+            MENUITEM "Dictionary Online",           ID_ONLINEFEATURES_DICTIONARYONLINE
+
+            MENUITEM "Lookup Online",               ID_LOOKUPONLINE
+            MENUITEM "Update Dictonary",            ID_UPDATEDICTONARY
+        END
+        POPUP "Key"
+        BEGIN
+            MENUITEM "Configuration",               ID_KEY_CONF
+            MENUITEM SEPARATOR
+            MENUITEM "Unicode",                     ID_KEY_UNICODE
+            MENUITEM "VIQR",                        ID_KEY_VIQR
+            MENUITEM "VNI Code Table",              ID_KEY_VNI
+            MENUITEM "TCVN3 Code Table",            ID_KEY_TCVN3
+            MENUITEM SEPARATOR
+            MENUITEM "Telex Typing",                ID_TELEX_TYPING
+            MENUITEM "Vni Typing",                  ID_VNI_TYPING
+            MENUITEM SEPARATOR
+            MENUITEM "ON",                          ID_KEY_ON
+        END
+        POPUP "AutoLook"
+        BEGIN
+            MENUITEM "ON",                          ID_AUTOLOOK_ON
+            MENUITEM SEPARATOR
+            MENUITEM "Ctrl+Right Click",            ID_CTRL_CLICK
+            MENUITEM "Shift+RightClick",            ID_SHIFT_CLICK
+            MENUITEM "Right Click",                 ID_CLICK
+            MENUITEM SEPARATOR
+            MENUITEM "Only Text",                   ID_ONLYTEXT
+        END
+        POPUP "Lookup on"
+        BEGIN
+            MENUITEM "Normal",                      ID_LOOKUPON_AUTOMATIC
+            MENUITEM "English and Vietnamese",      ID_LOOKUPON_ENGLISH
+            MENUITEM "France and Vietnamese",       ID_LOOKUPON_FRANCE
+            MENUITEM "Germany and Vietnamese",      ID_LOOKUPON_GERMANY
+            MENUITEM "Vietnamese and Vietnamese",   ID_LOOKUPON_VIETNAMESE
+            MENUITEM "Russia and Vietnamese",       ID_LOOKUPON_RUSSIA
+            MENUITEM "Nauy and Vietnamese",         ID_LOOKUPON_NAUY
+        END
+        POPUP "Dictionary"
+        BEGIN
+            MENUITEM "english-vietnamese",          ID_DICTIONARY_ENGLISHV
+            MENUITEM "france-vietnamese",           ID_DICTIONARY_FRANCEV
+            MENUITEM "germany-vietnamese",          ID_DICTIONARY_GERMANYV
+            MENUITEM "Nauy,Russia-vietnamese",      ID_DICTIONARY_NAUY_NV
+        END
+        MENUITEM "InfoKey",                     ID_INFOKEY
+        MENUITEM "Setting",                     ID_PANEL
+        MENUITEM "Help",                        ID_OPEN_HELP
+        MENUITEM "Exit",                        ID_END
+    END
+END
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "CodeTable"
+    BEGIN
+        MENUITEM "VietWareF",                   32795
+        MENUITEM "VietWareX",                   ID_KEY_VIETWAREX
+        MENUITEM "BKHCM1",                      ID_KEY_BKHCM1
+        MENUITEM "BKHCM2",                      ID_KEY_BKHCM2
+        MENUITEM "VPS",                         ID_KEY_VPS
+        MENUITEM "VISCII",                      ID_KEY_VISCII
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HELP                BITMAP                  "res\\Help1.BMP"
+IDB_OPTION              BITMAP                  "res\\home.BMP"
+IDB_CHECK               BITMAP                  "res\\imgArrowVote1.BMP"
+IDB_MENU_CLOSE          BITMAP                  "res\\menu_close.bmp"
+IDB_ABOUT               BITMAP                  "res\\ABOUT.BMP"
+IDB_BACKGROUND          BITMAP                  "res\\background.bmp"
+IDB_DEFAULT             BITMAP                  "res\\bitmap1.bmp"
+IDB_AUTHOR              BITMAP                  "res\\iconMemb.bmp"
+IDB_BUTTON              BITMAP                  "res\\Button.bmp"
+IDB_INFOKEY             BITMAP                  "res\\infoKey.bmp"
+IDB_SERVER              BITMAP                  "res\\Wi006432.bmp"
+IDB_EMAIL               BITMAP                  "res\\Ei002132.bmp"
+IDB_R                   BITMAP                  "res\\bmp00001.bmp"
+IDB_DICTIONARY          BITMAP                  "res\\r1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "xptheme\\xptheme.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Foldergreen.ico"
+IDI_LEDOFF              ICON                    "res\\LedOff.ico"
+IDI_LEDON               ICON                    "res\\LedOn.ico"
+IDI_DISABLE             ICON                    "res\\Foldergray.ico"
+IDI_SOUND               ICON                    "res\\Sound.ico"
+IDI_CONNECT             ICON                    "res\\connection.ico"
+IDI_DISCONNECT          ICON                    "res\\connecti.ico"
+IDI_SERVER              ICON                    "res\\Server.ico"
+IDI_AUTHOR              ICON                    "res\\user1.ico"
+IDI_TASKBAR             ICON                    "res\\taskbar.ico"
+IDI_CANCEL              ICON                    "res\\Cancel.ico"
+IDI_DICT                ICON                    "res\\dict.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MultiClick..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MultiClick.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

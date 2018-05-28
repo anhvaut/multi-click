@@ -1,0 +1,14 @@
+; ClickHook.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ClickHook"
+
+SECTIONS
+    .SHARDATA   Read Write Shared
+EXPORTS
+	MyMouseProc
+	SetHHook
+	GetSharedString
+	GetSharedStringW
+	SetLookMode
+	SetTextMode
+

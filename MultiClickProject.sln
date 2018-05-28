@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiClick", "MultiClick\MultiClick.vcproj", "{93BE1809-A088-4224-8311-0A091CD5ECD2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClickHook", "ClickHook\ClickHook.vcproj", "{6DA7F429-BEDA-49EA-B99B-9F5D3998C649}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{93BE1809-A088-4224-8311-0A091CD5ECD2}.Debug.ActiveCfg = Debug|Win32
+		{93BE1809-A088-4224-8311-0A091CD5ECD2}.Debug.Build.0 = Debug|Win32
+		{93BE1809-A088-4224-8311-0A091CD5ECD2}.Release.ActiveCfg = Release|Win32
+		{93BE1809-A088-4224-8311-0A091CD5ECD2}.Release.Build.0 = Release|Win32
+		{6DA7F429-BEDA-49EA-B99B-9F5D3998C649}.Debug.ActiveCfg = Debug|Win32
+		{6DA7F429-BEDA-49EA-B99B-9F5D3998C649}.Debug.Build.0 = Debug|Win32
+		{6DA7F429-BEDA-49EA-B99B-9F5D3998C649}.Release.ActiveCfg = Release|Win32
+		{6DA7F429-BEDA-49EA-B99B-9F5D3998C649}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
